@@ -29,6 +29,8 @@ public class ProductController {
     }
     //Get All Products
     @GetMapping
+    @CrossOrigin
+
     public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
